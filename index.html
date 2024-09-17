@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WeatherForecast</title>
+<script defer src="bundle.js"></script></head>
+<body>
+    <div class="container">
+        <div class="left-sidebar">
+
+        </div>
+        <header class="header-zone">
+            <div class="label-1">
+                <h2>Search location:</h2>
+            </div>
+            <div class="search-bar">
+              <input 
+                id="search" 
+                type="search" 
+                placeholder="Start typing to search..." 
+                autocomplete="off"
+              />
+            </div>
+            <button class="deg-btn">
+                <h2 class = "F"><span class="F">> deg.</span>F</h2>
+                <h2 class = "C hidden"><span class="C">> deg.</span>C</h2> 
+            </button>
+        </header>
+        <div class="data-zone">
+            <div class="locale">locale
+
+            </div>
+            <div class="main-stats">
+                <div class="temperature">
+                   <span class="top">Temperature</span>
+                   <span class="main"></span>
+                </div>
+                <div class="humidity"> 
+                    <span class="top">Humidity</span>
+                    <span class="main"></span>
+                 </div>
+                <div class="icon">    
+                    <span class="top">Icon</span>
+                    <span class="main"></span>
+                 </div>
+                <div class="precipitation">    
+                    <span class="top">Precipitation</span>
+                    <span class="main"></span>
+                 </div>
+                <div class="wind">    
+                    <span class="top">Wind speed</span>
+                    <span class="main"></span>
+                 </div>
+            </div>
+            <div class="conditions"> Current conditions
+
+            </div>
+            <div class="minor-stats">
+                <div class="temperature_minor">
+                    <ul id="temperature">
+                        <li id="feel">Feels<br>like</li><li id="feel2"></li>
+                        <li id="press">Air<br>press.</li><li id="press2"></li>
+                    </ul>
+                </div>
+                <div class="humidity_minor">
+                    <ul id="humidity">
+                        <li id="dew">Dew<br>point t</li><li id="dew2"></li>
+                        <li id="cloud">Cloud<br>cover %</li><li id="cloud2"></li>
+                    </ul>
+                </div>
+                <div class="icon_minor">
+                    <ul id="icon">
+                        <li id="rise">Sun<br>rise</li><li id="rise2"></li>
+                        <li id="set">Sun<br>set</li><li id="set2"></li>
+                        <li id="uv">UV<br>index</li><li id="uv2"></li>
+                    </ul>
+                </div>
+                <div class="precipitation_minor">
+                    <ul id="precipitation">
+                        <li id="precip">Type</li><li id="precip2"></li>
+                        <li id="prob">%</li><li id="prob2"></li>
+                    </ul>
+                </div>
+                <div class="wind_minor">
+                    <ul id="wind">
+                        <li id="dir">Dir<span>deg</span></li><li id="dir2"></li>
+                        <li id="gust">Gust<span>mph</span></li><li id="gust2"></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="varies showIcon showPopup">
+                <div class="icon-image">
+                   
+                </div>
+                <div class="popup hidden"> 
+                    <p id="p1">Date:
+                        <span class="d_datetime"></span>
+                    </p> 
+                    <p id="p3">Conditions:
+                        <span class="d_conditions"></span>
+                    </p>
+                    <p id="p2">Description: 
+                        <span class="d_description"></span>
+                    </p>
+                    <p id="p4">Temp:<span class="d_temp"></span>
+                               max: <span class="d_tempmax"></span>
+                               min: <span class="d_tempmin"></span>
+                    </p>
+                    <p id="p5">Humidity:<span class="d_humidity"></span>
+                               cloud:   <span class="d_cloudcover"></span>
+                               UV:      <span class="d_uvindex"></span>
+                    </p>
+                    <p id="p6">Wind:     <span class="d_windspeed"></span>
+                               direction:<span class="d_winddir"></span>
+                               gusts:    <span class="d_windgusts"></span>
+                    </p>
+                </div>
+            </div>
+        </div>
+        <footer class=" footer-zone">
+            <button class="pop pop1">1</button>
+            <button class="pop pop2">2</button>
+            <button class="pop pop3">3</button>
+            <button class="pop pop4">4</button>
+            <button class="pop pop5">5</button>
+            <button class="pop pop6">6</button>
+            <button class="pop pop7">7</button>
+        </footer>
+        <div class="right-sidebar">
+
+        </div>
+    </div>
+    <!--script type="module" src = '../dist/main.js'></script-->
+    <!-- ?NOT NEEDED TAKEN CARE OF BY WEBPACK CONFIG script src = 'main.js'></script-->
+</body>
+</html>
